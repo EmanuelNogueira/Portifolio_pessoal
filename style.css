@@ -624,6 +624,8 @@ header.stick {
 @media (max-width: 970px) {
   #menu-icon {
     display: block;
+    position: absolute;
+    left: 20px;
   }
   .home {
     min-height: 80vh;
@@ -721,10 +723,25 @@ header.stick {
   .sub-service {
     margin-top: 30px;
   }
+  .heading p {
+    margin-bottom: 50px;
+  }
+  .portifolio-content,
+  .service-content {
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 540px) {
   .contato .action form input[type="email"] {
     width: 310px;
+  }
+  .menu {
+    margin-top: -10px;
+  }
+  .top-btn {
+    right: 50%;
   }
 }
