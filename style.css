@@ -734,6 +734,10 @@ header.stick {
     align-items: center;
     margin: 0 auto;
   }
+  .top-btn {
+    right: 0px;
+    position: relative;
+  }
 }
 
 @media (max-width: 540px) {
