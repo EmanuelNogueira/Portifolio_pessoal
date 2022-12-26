@@ -746,4 +746,7 @@ header.stick {
   .top-btn {
     right: 50%;
   }
+  .sub-service {
+    margin: 0 auto;
+  }
 }
