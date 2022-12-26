@@ -702,9 +702,11 @@ header.stick {
   .sobre {
     grid-template-columns: 2fr;
     text-align: center;
+    margin: 0;
   }
   .sobre-img {
-    width: 20rem;
+    width: 17rem;
+    margin: 0;
     margin-bottom: 30px;
     display: block;
     margin: 0 auto;
