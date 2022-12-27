@@ -1,0 +1,63 @@
+    <!-- service -->
+    <!-- Sem uso por enquanto ----------------  
+    <section class="servicos" id="servicos">
+      <div class="heading">
+        <h3>Service</h3>
+        <h2>Adicional</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+      </div>
+
+      <div class="service-content">
+        <div class="row">
+          <div class="s s-one">
+            <img src="./arquivos/Icon.png" alt="" width="200px" />
+          </div>
+          <h3>Web Design</h3>
+          <h5>Starts from <span>500</span></h5>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="s s-two">
+            <img src="./arquivos/Icon.png" alt="" width="200px" />
+          </div>
+          <h3>Web Design</h3>
+          <h5>Starts from <span>500</span></h5>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="s s-three">
+            <img src="./arquivos/Icon.png" alt="" width="200px" />
+          </div>
+          <h3>Web Design</h3>
+          <h5>Starts from <span>500</span></h5>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="s s-four">
+            <img src="./arquivos/Icon.png" alt="" width="200px" />
+          </div>
+          <h3>Web Design</h3>
+          <h5>Starts from <span>500</span></h5>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+      </div>
+    </section>
+    -->

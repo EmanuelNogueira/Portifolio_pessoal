@@ -339,6 +339,8 @@ header.stick {
 
 .col img {
   max-width: 100%;
+  width: 100%;
+  height: 100%;
   width: 300px;
   height: auto;
   object-fit: cover;
@@ -354,6 +356,9 @@ header.stick {
   left: 0;
   border-radius: 12px;
   transition: all 0.4s;
+}
+.layer:hover {
+  background: linear-gradient(#00000056, #000000);
 }
 
 .layer h3 {
@@ -749,5 +754,12 @@ header.stick {
   }
   .sub-service {
     margin: 0 auto;
+  }
+  .cta-box {
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    text-align: center;
+    margin: 2rem;
   }
 }

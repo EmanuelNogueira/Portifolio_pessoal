@@ -20,6 +20,7 @@ window.onscroll = () => {
 };
 
 /* Animação do meu scroll */
+
 const sr = ScrollReveal({
   distance: "45px",
   duration: 2700,
