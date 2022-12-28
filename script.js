@@ -33,3 +33,37 @@ sr.reveal(".sub-service, .sobre, .cta, .portifolio, .servicos , .contato", {
   delay: 200,
   origin: "bottom",
 });
+
+/* Botão voltar ao topo */
+let botao = document.querySelector(".box");
+window.addEventListener("scroll", function () {
+  if (window.scrollY < 800) {
+    botao.style.display = "none";
+  } else {
+    botao.style.display = "block";
+  }
+});
+
+// Obtém a posição atual do scroll
+
+setInterval(() => {
+  /* Tamanho total da página */
+  /* document.body.offsetHeight - Mostra o tamanho total da página */
+  const scrollTotal = 3502; /* 3502 */
+  /* Tamanho atual da página */
+  const scrollPosition = window.pageYOffset; /* 2000 */
+  const scrollResultado = (scrollPosition / scrollTotal) * 100;
+  /* 56% */
+
+  // Usa uma expressão regular para substituir tudo o que não for dígito por nada
+  /* Arredondando os números */
+  var arredondado = Math.round(scrollResultado);
+
+  let circle = document.querySelector(".circle-2");
+  let circleresult = (arredondado / 220) * 220 * 2.4;
+
+  console.log(circleresult);
+  circle.style = `stroke-dashoffset: ${circleresult};`;
+}, 50);
+
+function enviarbotaao() {}

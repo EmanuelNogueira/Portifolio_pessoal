@@ -22,6 +22,50 @@ body {
   color: var(--text-color);
 }
 
+/* Propriedades do círculo */
+.box {
+  position: fixed;
+  bottom: 0px;
+  right: 35px;
+  transition: ease 0.6s;
+}
+.box-circle svg {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  filter: drop-shadow(0px 0px 2px var(--main-color));
+}
+circle {
+  width: 150px;
+  height: 150px;
+  /* Cancelamento da cor */
+  fill: none;
+  stroke: #ffffff;
+  /* Borda */
+  stroke-width: 6;
+  transform: translate(5px, 5px);
+  /* Tamanho total */
+  stroke-dasharray: 220;
+  /* Tamanho para ir diminuindo o valor */
+  stroke-dashoffset: 220;
+}
+/* "nth-child(1)" é estar pegando o primeiro elemento */
+circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: var(--main-color);
+}
+circle:nth-child(2) {
+  stroke: var(--bg-color);
+  transition: stroke-dashoffset 0.8s;
+}
+.circle-p {
+  position: relative;
+  bottom: 57px;
+  text-align: center;
+  font-size: 35px;
+  color: var(--main-color);
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -591,7 +635,7 @@ header.stick {
 
 /* Tamanho */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
   background-color: #c5edff;
 }
 
