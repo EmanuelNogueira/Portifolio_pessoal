@@ -3,7 +3,13 @@
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", function () {
-  header.classList.toggle("stick", window.scrollY > 0);
+  if (document.body.classList == "dark-mode-body") {
+    header.classList.toggle("dark-header-stick", window.scrollY > 0);
+    header.classList.remove("stick");
+  } else {
+    header.classList.toggle("stick", window.scrollY > 0);
+    header.classList.remove("dark-header-stick");
+  }
 });
 
 let meumenu = document.querySelector("#menu-icon");
@@ -20,7 +26,6 @@ window.onscroll = () => {
 };
 
 /* Animação do meu scroll */
-
 const sr = ScrollReveal({
   distance: "45px",
   duration: 2700,
@@ -37,6 +42,7 @@ sr.reveal(".sub-service, .sobre, .cta, .portifolio, .servicos , .contato", {
 /* Botão voltar ao topo */
 let botao = document.querySelector(".box");
 window.addEventListener("scroll", function () {
+  botao.style.display = "none";
   if (window.scrollY < 800) {
     botao.style.display = "none";
   } else {
@@ -62,8 +68,11 @@ setInterval(() => {
   let circle = document.querySelector(".circle-2");
   let circleresult = (arredondado / 220) * 220 * 2.4;
 
-  console.log(circleresult);
   circle.style = `stroke-dashoffset: ${circleresult};`;
 }, 50);
 
-function enviarbotaao() {}
+let dark_mode = document.querySelector("#dark-mode-toggle");
+
+dark_mode.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode-body");
+});

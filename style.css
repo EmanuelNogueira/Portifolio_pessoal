@@ -12,9 +12,12 @@
   --text-color: #000;
   --secound-color: #a09dab;
   --main-color: #23a2f7;
+  --dark-color: #141414;
   --big-font: 5rem;
   --h2-font: 3rem;
   --p-font: 1.1rem;
+}
+.stick {
 }
 
 body {
@@ -27,7 +30,6 @@ body {
   position: fixed;
   bottom: 0px;
   right: 35px;
-  transition: ease 0.6s;
 }
 .box-circle svg {
   width: 60px;
@@ -42,7 +44,7 @@ circle {
   fill: none;
   stroke: #ffffff;
   /* Borda */
-  stroke-width: 6;
+  stroke-width: 4;
   transform: translate(5px, 5px);
   /* Tamanho total */
   stroke-dasharray: 220;
@@ -252,6 +254,7 @@ header.stick {
   background: var(--bg-color);
   padding: 13px 18%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid var(--main-color);
 }
 
 .items {
@@ -688,7 +691,7 @@ header.stick {
     background: #23a2f7f3;
     text-align: right;
     transform: all 0.4;
-    height: 440px;
+    height: 350px;
   }
   .navlist a {
     display: block;
@@ -787,6 +790,10 @@ header.stick {
     right: 0px;
     position: relative;
   }
+  circle {
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+  }
 }
 
 @media (max-width: 540px) {
@@ -806,4 +813,33 @@ header.stick {
     text-align: center;
     margin: 2rem;
   }
+}
+
+#dark-mode-toggle {
+  cursor: pointer;
+}
+
+.dark-mode-body {
+  transition: ease 1s;
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+.dark-header-stick {
+  transition: ease 1s;
+  color: var(--bg-color) !important;
+  background: var(--dark-color) !important;
+  box-shadow: 0px 0px 20px rgba(103, 194, 255, 0.5) !important;
+  border-bottom: 2px solid rgba(252, 252, 252, 0.5);
+}
+
+.dark-header-stick > .navlist a {
+  font-size: var(--bg-color);
+  color: var(--bg-color) !important;
+  font-weight: 500;
+  padding: 10px 27px;
+}
+
+.dark-header-stick > .top-btn {
+  background-color: var(--main-color) !important;
 }
