@@ -83,7 +83,7 @@ header {
 }
 
 .backgorund_white {
-  position: absolute;
+  position: fixed;
   width: 1320px;
   height: 600px;
   margin: 0 auto;
