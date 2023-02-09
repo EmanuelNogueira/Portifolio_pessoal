@@ -82,6 +82,14 @@ header {
   transition: 0.3s;
 }
 
+.backgorund_white {
+  position: absolute;
+  width: 1320px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
 .logo img {
   max-width: 100%;
   width: 100px;
@@ -842,4 +850,8 @@ header.stick {
 
 .dark-header-stick > .top-btn {
   background-color: var(--main-color) !important;
+}
+
+.dark-header-stick > .backgorund_white {
+  background-image: url(./arquivos/Background/Black.jpg);
 }
