@@ -7,6 +7,7 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
+
 :root {
   --bg-color: #ffffff;
   --text-color: #000;
@@ -30,12 +31,14 @@ body {
   bottom: 0px;
   right: 35px;
 }
+
 .box-circle svg {
   width: 60px;
   height: 60px;
   position: relative;
   filter: drop-shadow(0px 0px 2px var(--main-color));
 }
+
 circle {
   width: 150px;
   height: 150px;
@@ -50,15 +53,18 @@ circle {
   /* Tamanho para ir diminuindo o valor */
   stroke-dashoffset: 220;
 }
+
 /* "nth-child(1)" é estar pegando o primeiro elemento */
 circle:nth-child(1) {
   stroke-dashoffset: 0;
   stroke: var(--main-color);
 }
+
 circle:nth-child(2) {
   stroke: var(--bg-color);
   transition: stroke-dashoffset 0.8s;
 }
+
 .circle-p {
   position: relative;
   bottom: 57px;
@@ -83,8 +89,8 @@ header {
 
 .backgorund_white {
   position: absolute;
-  width: 1320px;
-  height: 600px;
+  width: 100%;
+  height: 800px;
   margin: 0 auto;
   margin-top: 40px;
 }
@@ -109,6 +115,7 @@ header {
   font-weight: 500;
   padding: 10px 27px;
 }
+
 .navlist a::after {
   content: "";
   position: absolute;
@@ -119,6 +126,7 @@ header {
   left: 0;
   transition: ease 0.4s;
 }
+
 .navlist a:hover::after {
   width: 100%;
 }
@@ -156,6 +164,7 @@ section {
   padding: 100px 18%;
   margin-top: 60px;
 }
+
 .menu {
   min-height: 100vh;
   height: 100%;
@@ -172,7 +181,7 @@ section {
 .menu img {
   position: relative;
   animation: 4s immmg infinite;
-  width: 370px;
+  width: 500px;
   margin-top: -50px;
 }
 
@@ -180,9 +189,11 @@ section {
   0% {
     bottom: 20px;
   }
+
   50% {
     bottom: -20px;
   }
+
   100% {
     bottom: 20px;
   }
@@ -276,7 +287,7 @@ header.stick {
   margin-top: -100px;
 }
 
-.sub-box:hover > .sub-img {
+.sub-box:hover>.sub-img {
   transition: ease 0.3s;
   color: var(--main-color);
 }
@@ -290,8 +301,7 @@ header.stick {
   background: #ffffff;
   box-shadow: 18px 0px 87px 0px rgb(10 15 70 / 7%);
   border-radius: 12px;
-  transform: perspective(900px) rotatex(5deg) rotateY(10.23deg)
-    scale3d(1.05, 1.05, 1.05);
+  transform: perspective(900px) rotatex(5deg) rotateY(10.23deg) scale3d(1.05, 1.05, 1.05);
 }
 
 .sub-img img {
@@ -327,8 +337,7 @@ header.stick {
 }
 
 .sobre-img:hover img {
-  transform: perspective(900px) rotatex(5deg) rotateY(10.23deg)
-    scale3d(1.05, 1.05, 1.05);
+  transform: perspective(900px) rotatex(5deg) rotateY(10.23deg) scale3d(1.05, 1.05, 1.05);
   transition: ease 0.8s;
 }
 
@@ -344,6 +353,7 @@ header.stick {
   font-size: 20px;
   font-weight: 500;
 }
+
 .sobre-text p {
   max-width: 550px;
   font-size: var(--p-font);
@@ -374,9 +384,11 @@ header.stick {
   color: var(--secound-color);
   line-height: 28px;
 }
+
 .portifolio {
   margin-top: -50px;
 }
+
 .portifolio-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
@@ -411,6 +423,7 @@ header.stick {
   border-radius: 12px;
   transition: all 0.4s;
 }
+
 .layer:hover {
   background: linear-gradient(#00000056, #000000);
 }
@@ -482,12 +495,15 @@ header.stick {
 .s.s-one img {
   background: #bad1eb;
 }
+
 .s.s-two img {
   background: #d9d1fa;
 }
+
 .s.s-three img {
   background: #faedce;
 }
+
 .s.s-four img {
   background: #baebcd;
 }
@@ -497,11 +513,13 @@ header.stick {
   font-weight: 500;
   margin-bottom: 2px;
 }
+
 .row h5 {
   font-size: 17px;
   font-weight: 500;
   margin-bottom: 19px;
 }
+
 .row p {
   font-size: var(--p-font);
   color: var(--secound-color);
@@ -509,8 +527,7 @@ header.stick {
 }
 
 .row:hover {
-  transform: perspective(900px) rotatex(5deg) rotateY(10.23deg)
-    scale3d(1.05, 1.05, 1.05);
+  transform: perspective(900px) rotatex(5deg) rotateY(10.23deg) scale3d(1.05, 1.05, 1.05);
 }
 
 .cta {
@@ -533,38 +550,57 @@ header.stick {
   padding: 15px 20px;
   transition: ease 0.4s;
 }
-.wrap:hover > #html5 {
+
+.wrap:hover>#html5 {
   color: #ff7300;
   transform: scale(1.4);
   transition: ease 0.3s;
 }
-.wrap:hover > #css3 {
+
+.wrap:hover>#css3 {
   color: #00a2ff;
   transform: scale(1.4);
   transition: ease 0.3s;
 }
-.wrap:hover > #javascript {
+
+.wrap:hover>#javascript {
   color: #f8f400;
   transform: scale(1.4);
   transition: ease 0.3s;
 }
-.wrap:hover > #sass {
+
+.wrap:hover>#sass {
   color: #f000bc;
   transform: scale(1.4);
   transition: ease 0.3s;
 }
-.wrap:hover > #reactjs {
+
+.wrap:hover>#reactjs {
   color: #00d9ff;
   transform: scale(1.4);
   transition: ease 0.3s;
 }
-.wrap:hover > #nodejs {
+
+.wrap:hover>#nodejs {
   color: #35e400;
   transform: scale(1.4);
   transition: ease 0.3s;
 }
-.wrap:hover > #wordpress {
+
+.wrap:hover>#wordpress {
   color: #0779ad;
+  transform: scale(1.4);
+  transition: ease 0.3s;
+}
+
+.wrap:hover>#python {
+  color: #121212;
+  transform: scale(1.4);
+  transition: ease 0.3s;
+}
+
+.wrap:hover>#shopify {
+  color: #00c331;
   transform: scale(1.4);
   transition: ease 0.3s;
 }
@@ -633,18 +669,19 @@ header.stick {
   text-transform: uppercase;
   animation: 2s button_animation infinite ease;
 }
+
 .action form a p:hover {
   filter: drop-shadow(0px 0px 20px #ffffff85);
 }
 
 @keyframes button_animation {
-  0% {
-  }
+  0% {}
+
   50% {
     filter: drop-shadow(0px 0px 20px #ffffff85);
   }
-  100% {
-  }
+
+  100% {}
 }
 
 .contato .action form input[type="submit"]:hover {
@@ -695,17 +732,21 @@ header.stick {
     padding: 16px 3%;
     transition: 0.3s;
   }
+
   header.stick {
     padding: 10px 3%;
     transition: 0.3s;
   }
+
   section {
     padding: 70px 3%;
   }
+
   .contato {
     width: 95%;
     transition: 0.3s;
   }
+
   :root {
     --big-font: 4rem;
     --h2-font: 2.3rem;
@@ -720,9 +761,11 @@ header.stick {
     position: absolute;
     left: 20px;
   }
+
   .home {
     min-height: 80vh;
   }
+
   .navlist {
     position: absolute;
     top: -600px;
@@ -734,6 +777,7 @@ header.stick {
     transform: all 0.4;
     height: 350px;
   }
+
   .navlist a {
     display: block;
     padding: 1.2rem;
@@ -743,16 +787,23 @@ header.stick {
     font-size: 15px;
     margin-top: 5px;
   }
+
   .navlist a:hover {
     background: var(--bg-color);
     color: var(--main-color);
     transition: ease 0.2s;
   }
+
   .navlist a::after {
     display: none;
   }
+
   .navlist.active {
     top: 100%;
+  }
+
+  .backgorund_white {
+    display: none;
   }
 }
 
@@ -762,41 +813,50 @@ header.stick {
     min-height: 130vh;
     grid-gap: 1rem;
   }
+
   .menu-text {
     padding-top: 55px;
     text-align: center;
   }
+
   .menu-text h5 {
     margin-bottom: 30px;
   }
+
   .menu-text p {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 30px;
   }
+
   .menu-img {
     text-align: center;
     margin-top: 120px;
   }
+
   .menu-img img {
     width: 22rem;
     height: auto;
   }
+
   .social {
     align-items: center;
     text-align: center;
   }
+
   .btn {
     align-items: center;
     text-align: center;
     position: absolute;
     left: 35%;
   }
+
   .sobre {
     grid-template-columns: 2fr;
     text-align: center;
     margin: 0;
   }
+
   .sobre-img {
     width: 17rem;
     margin: 0;
@@ -804,33 +864,41 @@ header.stick {
     display: block;
     margin: 0 auto;
   }
+
   .sobre-text p {
     text-align: center;
   }
+
   :root {
     --big-font: 3.4rem;
     --h2-font: 2rem;
   }
+
   section {
     padding: 65px 3%;
     transform: 0.3s;
   }
+
   .sub-service {
     margin-top: 30px;
   }
+
   .heading p {
     margin-bottom: 50px;
   }
+
   .portifolio-content,
   .service-content {
     text-align: center;
     align-items: center;
     margin: 0 auto;
   }
+
   .top-btn {
     right: 0px;
     position: relative;
   }
+
   circle {
     stroke-dasharray: 300;
     stroke-dashoffset: 300;
@@ -841,12 +909,15 @@ header.stick {
   .contato .action form input[type="email"] {
     width: 310px;
   }
+
   .menu {
     margin-top: -10px;
   }
+
   .sub-service {
     margin: 0 auto;
   }
+
   .cta-box {
     grid-template-columns: repeat(auto-fit, minmax(100px, auto));
     grid-gap: 2rem;
@@ -874,17 +945,17 @@ header.stick {
   border-bottom: 2px solid rgba(252, 252, 252, 0.5);
 }
 
-.dark-header-stick > .navlist a {
+.dark-header-stick>.navlist a {
   font-size: var(--bg-color);
   color: var(--bg-color) !important;
   font-weight: 500;
   padding: 10px 27px;
 }
 
-.dark-header-stick > .top-btn {
+.dark-header-stick>.top-btn {
   background-color: var(--main-color) !important;
 }
 
-.dark-header-stick > .backgorund_white {
+.dark-header-stick>.backgorund_white {
   background-image: url(./arquivos/Background/Black.jpg);
 }
