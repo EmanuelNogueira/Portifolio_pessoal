@@ -906,6 +906,11 @@ header.stick {
 }
 
 @media (max-width: 540px) {
+  header.stick {
+    padding: 10px 15%;
+    transition: 0.3s;
+  }
+
   .contato .action form input[type="email"] {
     width: 310px;
   }
